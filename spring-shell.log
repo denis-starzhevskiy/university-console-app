@@ -1,0 +1,151 @@
+1674243941079:ench DENIS
+1674243949590:echo Denis
+1674244162740:help
+1674244179884:history
+1674246132557:echoWithColor Denis
+1674246135312:help
+1674246147682:echo-with-color Denis
+1674246700566:help
+1674246706701:echo-several-times
+1674246717458:echo-several-times Denis
+1674252412570:help
+1674252423773:who-is-head-department
+1674252438608:who-is-head-department Denis
+1674252476291:who-is-head-of-department DENis
+1674403665364:help
+1674403682655:count-lectors-by-department First
+1674403693056:stacktrace
+1674403917039:count-lectors-by-department First
+1674404697239:count First
+1674404701805:count second
+1674404706786:count Second
+1674404711078:count Third
+1674404717453:count Fourth
+1674404722728:count First
+1674405093770:count
+1674405102302:count Second
+1674405107075:count First
+1674405120152:help
+1674405126492:stacktrace
+1674405132527:count Fake
+1674405138950:stacktrace
+1674405301139:count Fake
+1674406187556:count fake
+1674406649698:count Fisrt
+1674406654324:count First
+1674406658485:count Second
+1674406663988:stacktrace
+1674406929754:count fake
+1674406934216:count First
+1674407005520:count Fake
+1674407010993:count Second
+1674407017994:count Third
+1674408027635:help
+1674408045741:show-count-of-employee-of First
+1674408058933:show-count-of-employees-of First
+1674408064344:show-count-of-employees-of Fake
+1674408249933:SELECT COUNT(*) as countEmployees FROM department " +\n                "JOIN departments_lectors dl on department.id = dl.department_id " +\n                "WHERE department_name = ?help
+1674408254164:help
+1674408264428:show-count-of-employees-of First
+1674408409876:help
+1674408417836:show-count-of-employees-of First
+1674408701084:help
+1674408710754:show-count-of-employees-of First
+1674408719692:show-count-of-employees-of Second
+1674410165033:help
+1674410175248:show-the-average-salary-for-department First
+1674410181096:stacktrace
+1674410198910:show-the-average-salary-for-department First
+1674410335478:help
+1674410347174:show-the-average-salary-for-department First
+1674410768432:help
+1674410777151:show-the-average-salary-for-department First
+1674410788582:show-the-average-salary-for-department Second
+1674410797356:show-the-average-salary-for-department Third
+1674411578971:help
+1674411587598:who-is-head-of-department First
+1674411592320:who-is-head-of-department Second
+1674411597288:who-is-head-of-department Fourth
+1674414338230:help
+1674414348613:global-search-by Fir
+1674414359437:global-search-by Sec
+1674414365600:global-search-by st
+1674414375570:global-search-by o
+1674414445106:help
+1674414454529:global-search-by f
+1674414466278:global-search-by F
+1674414772641:help
+1674414789441:global-search-by f
+1674414919664:help
+1674414928028:global-search-by f
+1674415013544:help
+1674415019393:global-search-by f
+1674415690815:help
+1674415700235:global-search-by f
+1674415708445:global-search-by А
+1674415714680:global-search-by Д
+1674415910974:help
+1674415919675:global-search-by Д
+1674415968018:help
+1674415973323:global-search-by
+1674415987715:global-search-by Д
+1674416169764:help
+1674416184624:global-search-by F
+1674416194267:global-search-by Д
+1674416377199:help
+1674416384140:global-search-by
+1674416492128:help
+1674416498506:global-search-by
+1674416507604:UNIVERSITY-TEST_TASK:>global-search-by
+1674416513238:global-search-by
+1674416548456:help
+1674423897873:global-search-by
+1674423906244:global-search-by a
+1674423912847:global-search-by ф
+1674423916769:global-search-by н
+1674423926417:global-search-by шній
+1674424138004:help
+1674424145407:global-search-by f
+1674424163877:help
+1674424202419:global-search-by фа
+1674424205357:global-search-by па
+1674424209689:global-search-by ть
+1674424217282:global-search-by ль
+1674424218977:global-search-byл
+1674424222130:global-search-by
+1674424225110:global-search-by л
+1674424237016:global-search-by є
+1674424240133:global-search-by Є
+1674424246232:global-search-by ю
+1674424255215:global-search-by мит
+1674424258840:global-search-by м
+1674424264488:global-search-by п
+1674424269790:global-search-by андрій
+1674424276282:global-search-by Потан
+1674424280072:global-search-by потап
+1674424289036:global-search-by швидкий
+1674424298962:global-search-by швидко
+1674424304253:global-search-by другий
+1674424486762:global-search-by
+1674424488852:help
+1674424501337:show-count-of-employees-of Перший
+1674424506757:show-count-of-employees-of Третій
+1674424511371:show-count-of-employees-of Другий
+1674424527859:show-count-of-employee-for Перший
+1674424533335:show-count-of-employee-for Третій
+1674424539325:show-count-of-employee-for Четвертий
+1674424543683:show-count-of-employee-for Пятий
+1674424550083:show-count-of-employee-for Шостий
+1674424555095:show-count-of-employee-for авіавіа
+1674424999623:help
+1674425037094:who-is-head-of-department Дригй
+1674425046236:who-is-head-of-department Другий
+1674427714721:help
+1674427723968:show-statistics Перший
+1674427728636:show-statistics Третій
+1674427743741:рудз
+1674427746424:help
+1674427756328:show-the-average-salary-for-department Другий
+1674427761873:show-the-average-salary-for-department Перший
+1674427763973:show-the-average-salary-for-department авав
+1674427766852:show-the-average-salary-for-department Третій

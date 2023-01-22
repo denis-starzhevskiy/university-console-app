@@ -1,0 +1,10 @@
+version: "4.12.0"
+services:
+  postgres:
+    image: postgres:15.0
+    environment:
+      POSTGRES_DB: "university-test-task"
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "12345"
+    ports:
+      - "5432:5432"
