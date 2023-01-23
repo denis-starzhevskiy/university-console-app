@@ -45,14 +45,16 @@ public class UniversityController {
 
     @ShellMethod("Get count of lectors of the department by their degrees")
     public String ShowStatistics(@ShellOption({"-N", "--name"}) String departmentName) {
+        try {
+            StringBuilder result = new StringBuilder("\n");
+            departmentService.getStatisticsByDepartmentName(departmentName).forEach((key, value) -> {
+                result.append(key + " -> " + value + "\n");
+            });
 
-
-        StringBuilder result = new StringBuilder("\n");
-        departmentService.getStatisticsByDepartmentName(departmentName).forEach((key, value) -> {
-            result.append(key + " -> " + value + "\n");
-        });
-
-        return String.valueOf(result);
+            return String.valueOf(result);
+        } catch (Exception ex) {
+            return "Something went wrong. Please, try later!";
+        }
     }
 
     @ShellMethod("Get count of all employees of the department")
@@ -65,7 +67,7 @@ public class UniversityController {
             return shellHelper.getErrorMessage("Please, enter an exist department name");
         }
 
-        try {
+        
             int countOfEmployee = departmentService.getCountEmployeesByDepartment(departmentName);
             return String.format("Count of employees in the %s is %s", departmentName, countOfEmployee);
         } catch (Exception ex) {
@@ -93,19 +95,20 @@ public class UniversityController {
 
     @ShellMethod("Global search of departments and lectors")
     public String GlobalSearchBy(@ShellOption(value = {"-P", "--param"}, defaultValue = ShellOption.NULL) String template) {
-        if(template == null) {
-            StringBuilder result = new StringBuilder();
-            List<Department> departments = departmentService.getAllDepartments();
-            OutputHelper<Department> outputDepartmentsHelper = new OutputHelper<>();
-            result.append(outputDepartmentsHelper.printOutPutEntities(departments));
+         try {
+            if(template == null) {
+                StringBuilder result = new StringBuilder();
+                List<Department> departments = departmentService.getAllDepartments();
+                OutputHelper<Department> outputDepartmentsHelper = new OutputHelper<>();
+                result.append(outputDepartmentsHelper.printOutPutEntities(departments));
 
-            List<Lector> lectors = lectorService.getAllLectors();
-            OutputHelper<Lector> outputLectorsHelper = new OutputHelper<>();
-            result.append(outputLectorsHelper.printOutPutEntities(lectors));
-            return String.format(String.valueOf(result));
-        }
+                List<Lector> lectors = lectorService.getAllLectors();
+                OutputHelper<Lector> outputLectorsHelper = new OutputHelper<>();
+                result.append(outputLectorsHelper.printOutPutEntities(lectors));
+                return String.format(String.valueOf(result));
+            }
 
-        try {
+       
             StringBuilder result = new StringBuilder();
             List<Department> departments = departmentService.getFilteredDepartments(template);
             OutputHelper<Department> outputDepartmentsHelper = new OutputHelper<>();
